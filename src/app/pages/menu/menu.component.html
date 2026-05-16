@@ -1,0 +1,16 @@
+@if (menuReady$ | async) {
+  <div class="menu-page">
+    <app-menu-header />
+
+    <div class="menu-page__body">
+      <app-menu-sidebar />
+      <app-menu-items />
+    </div>
+  </div>
+} @else {
+  <p class="menu-page__loading" aria-live="polite">Загрузка меню…</p>
+}
+
+<p class="menu-page__back">
+  <a routerLink="/">На главную</a>
+</p>

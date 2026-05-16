@@ -1,0 +1,22 @@
+<section class="menu-items" aria-label="Пункты меню">
+  @if (menuState.activeSection(); as section) {
+    <ul class="menu-items__list">
+      @for (item of section.items; track item.id) {
+        <li class="menu-items__row">
+          <label class="menu-items__label">
+            <input
+              type="checkbox"
+              class="menu-items__checkbox"
+              [checked]="isChecked(item.id)"
+              (change)="toggleItem(item.id)"
+            />
+            <span>{{ item.label }}</span>
+          </label>
+          <span class="menu-items__value">Value: {{ item.value }}</span>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p class="menu-items__empty">Раздел не выбран</p>
+  }
+</section>

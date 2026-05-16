@@ -1,0 +1,11 @@
+<header class="menu-header" aria-label="Сводка по выбранному разделу">
+  <p class="menu-header__section">
+    Раздел:
+    <strong>{{ menuState.activeSection()?.title ?? '—' }}</strong>
+  </p>
+
+  <div class="menu-header__stats">
+    <p>Выбрано пунктов: <strong>{{ menuState.selectedCount() }}</strong></p>
+    <p>Общее значение: <strong>{{ menuState.totalValue() }}</strong></p>
+  </div>
+</header>

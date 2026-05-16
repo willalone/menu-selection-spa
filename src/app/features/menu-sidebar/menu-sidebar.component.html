@@ -1,0 +1,20 @@
+<nav class="menu-sidebar" aria-label="Разделы меню">
+  <ul class="menu-sidebar__list">
+    @for (section of menuState.sections(); track section.id) {
+      <li>
+        <button
+          type="button"
+          class="menu-sidebar__item"
+          [class.menu-sidebar__item--active]="menuState.activeSectionId() === section.id"
+          [attr.aria-current]="menuState.activeSectionId() === section.id ? 'page' : null"
+          (click)="selectSection(section.id)"
+        >
+          @if (menuState.activeSectionId() === section.id) {
+            <span class="menu-sidebar__marker" aria-hidden="true">&gt;</span>
+          }
+          {{ section.title }}
+        </button>
+      </li>
+    }
+  </ul>
+</nav>

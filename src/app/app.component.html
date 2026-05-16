@@ -1,0 +1,16 @@
+<div class="app-shell">
+  <header class="app-shell__topbar">
+    <a routerLink="/" class="app-shell__brand">Menu Selection SPA</a>
+
+    <nav class="app-shell__nav" aria-label="Основная навигация">
+      <a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{ exact: true }">
+        Главная
+      </a>
+      <a routerLink="/menu" routerLinkActive="is-active">Меню</a>
+    </nav>
+  </header>
+
+  <div class="app-shell__content">
+    <router-outlet />
+  </div>
+</div>

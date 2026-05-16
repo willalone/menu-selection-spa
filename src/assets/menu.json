@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "type-1",
+      "title": "Тип 1",
+      "items": [
+        { "id": "item-1", "label": "Item 1", "value": 20 },
+        { "id": "item-2", "label": "Item 2", "value": 30.5 },
+        { "id": "item-3", "label": "Item 3", "value": 40 },
+        { "id": "item-4", "label": "Item 4", "value": 50 }
+      ]
+    },
+    {
+      "id": "type-2",
+      "title": "Тип 2",
+      "items": [
+        { "id": "item-1", "label": "Item 1", "value": 15 },
+        { "id": "item-2", "label": "Item 2", "value": 25 },
+        { "id": "item-3", "label": "Item 3", "value": 35 }
+      ]
+    }
+  ]
+}
